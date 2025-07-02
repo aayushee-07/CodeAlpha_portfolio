@@ -1,0 +1,212 @@
+/* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #2c5364;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ==== HEADER ==== */
+header {
+  background-color: #0f2027;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+header nav a {
+  color: white;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==== HERO ==== */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.greet {
+  color: #00ffc8; /* Highlight color for 'Hello, I'm' */
+  font-weight: 500;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  color: #203a43;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #416a82;
+  color: white;
+}
+
+/* ==== SECTIONS ==== */
+.section {
+  padding: 60px 20px;
+}
+
+.bg-light {
+  background-color: #f0f4f8;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #203a43;
+}
+
+/* ==== SKILLS ==== */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-weight: 500;
+}
+
+.skills-list li {
+  background-color: #e1ecf4;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* ==== PROJECTS ==== */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-left: 5px solid #203a43;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ==== RESUME BUTTON ==== */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #203a43;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #2c5364;
+}
+
+/* ==== CONTACT ==== */
+#contact a {
+  font-weight: 600;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: #0f2027;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+/* ==== SCROLL TO TOP (optional) ==== */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #203a43;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero .btn {
+    font-size: 15px;
+  }
+}
